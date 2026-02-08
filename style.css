@@ -1,0 +1,68 @@
+html,body{
+    overflow: hidden;
+}
+body{
+    background-image: url(back.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15vh;
+    min-height: 100vh;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.intro{
+    width: min(90vw,700px);
+    padding: clamp(16px,3vw,28px);
+    text-align: center;
+    background:linear-gradient(to bottom, #CFE9D9, #9CCFB5);
+    color: rgba(0, 0, 0, 0.427);
+    border:0.01px solid black;
+    box-shadow:
+      12px 10px 20px rgba(0, 0, 0, 0.35),
+      28px 28px 60px rgba(0, 0, 0, 0.55);
+    border-radius: 20px;
+    font-weight: bold;
+}
+.sector{
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+button {
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  gap: 20px;
+}
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+.easy{
+    background: linear-gradient(135deg, #4ADE80, #22C55E);
+}
+.medium{
+    background: linear-gradient(135deg, #FACC15, #EAB308);
+}
+.hard{
+    background: linear-gradient(135deg, #F87171, #DC2626);
+}
+.extrahard{
+    background: linear-gradient(135deg, #A855F7, #7E22CE);
+}
